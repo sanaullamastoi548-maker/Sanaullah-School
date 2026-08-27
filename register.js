@@ -6,7 +6,7 @@
 
 // Google Apps Script Web App URL
 const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbz-ZiGYt1PqIBEx9-kz1XeRK6bxwiwkfyNvOSBec6N_DYKsg7gYa5GDM14j1baCq3OvSQ/exec";
+    "https://script.google.com/macros/library/d/18SAxL9A0FfQIGwCCl8E2T_CJBjaZu5-WGDjL4q_vmQsmHs7z87HauakF/2";
 
 
 // Get HTML elements
