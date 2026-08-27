@@ -1,1 +1,503 @@
+/* =========================================
+   Sanaullah School
+   Register Page CSS
+   ========================================= */
 
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "Noto Sans Arabic", sans-serif;
+    background: #f5f8fc;
+    color: #222;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   Header
+   ========================================= */
+
+.register-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* ---------- School Logo ---------- */
+
+.school-logo {
+    text-align: right;
+}
+
+.school-logo h1 {
+    font-size: 26px;
+    margin-bottom: 2px;
+}
+
+.school-logo p {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* ---------- Home Link ---------- */
+
+.home-link {
+    text-decoration: none;
+    color: #222;
+    background: #f1f5f9;
+    padding: 9px 17px;
+    border-radius: 9px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.home-link:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Main Registration Area
+   ========================================= */
+
+.register-container {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+
+/* =========================================
+   Registration Card
+   ========================================= */
+
+.register-card {
+    width: 100%;
+    max-width: 560px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   Registration Title
+   ========================================= */
+
+.register-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef4ff;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.register-title h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.register-title p {
+    color: #555;
+    font-size: 16px;
+}
+
+.register-title .small-text {
+    margin-top: 4px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Form
+   ========================================= */
+
+#registrationForm {
+    width: 100%;
+}
+
+
+/* ---------- Form Group ---------- */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.optional {
+    font-size: 12px;
+    font-weight: normal;
+    color: #777;
+}
+
+
+/* =========================================
+   Inputs & Select
+   ========================================= */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 15px;
+    border: 1px solid #d7dee8;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #222;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+
+/* ---------- Focus ---------- */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ---------- Placeholder ---------- */
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+
+/* =========================================
+   Information Box
+   ========================================= */
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 22px;
+}
+
+.info-box span {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================================
+   Register Button
+   ========================================= */
+
+.register-button {
+    width: 100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.register-button:active {
+    transform: translateY(0);
+}
+
+
+/* ---------- Disabled Button ---------- */
+
+.register-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================
+   Loading Message
+   ========================================= */
+
+.loading-message {
+    text-align: center;
+    margin-top: 18px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Success Message
+   ========================================= */
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px 18px;
+    background: #f6fff8;
+    border: 1px solid #ccebd4;
+    border-radius: 14px;
+}
+
+.success-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.success-message h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.success-message p {
+    color: #555;
+    font-size: 15px;
+}
+
+
+/* ---------- Student ID Box ---------- */
+
+.student-id-box {
+    margin: 18px auto;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px dashed #b8c7d9;
+    border-radius: 10px;
+}
+
+.student-id-box span {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.student-id-box strong {
+    display: block;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   Back Home Button
+   ========================================= */
+
+.back-home-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.back-home-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Error Message
+   ========================================= */
+
+.error-message {
+    margin-top: 18px;
+    padding: 12px 15px;
+    text-align: center;
+    background: #fff5f5;
+    border: 1px solid #f1caca;
+    border-radius: 10px;
+    color: #b42318;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+.register-footer {
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 22px 15px;
+}
+
+.register-footer p {
+    color: #777;
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .register-header {
+        padding: 15px 20px;
+    }
+
+    .school-logo h1 {
+        font-size: 22px;
+    }
+
+    .school-logo p {
+        font-size: 12px;
+    }
+
+    .home-link {
+        padding: 8px 13px;
+        font-size: 14px;
+    }
+
+    .register-container {
+        padding: 35px 15px;
+    }
+
+    .register-card {
+        padding: 28px 22px;
+    }
+
+    .register-title h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =========================================
+   Small Mobile
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .register-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .school-logo {
+        text-align: center;
+    }
+
+    .register-container {
+        padding: 25px 12px;
+    }
+
+    .register-card {
+        padding: 25px 17px;
+        border-radius: 14px;
+    }
+
+    .register-title {
+        margin-bottom: 25px;
+    }
+
+    .register-title h2 {
+        font-size: 23px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        min-height: 48px;
+        font-size: 15px;
+    }
+
+    .register-button {
+        min-height: 50px;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   Very Small Screens
+   ========================================= */
+
+@media (max-width: 350px) {
+
+    .register-card {
+        padding: 22px 13px;
+    }
+
+    .register-title h2 {
+        font-size: 21px;
+    }
+
+    .home-link {
+        width: 100%;
+        text-align: center;
+    }
+}
