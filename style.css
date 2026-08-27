@@ -1,1 +1,330 @@
+/* =========================================
+   Sanaullah School
+   Main Home Page Styles
+   ========================================= */
 
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "Noto Sans Arabic", sans-serif;
+    background: #f7f9fc;
+    color: #222;
+    line-height: 1.7;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    text-align: right;
+}
+
+.logo h1 {
+    font-size: 26px;
+    margin-bottom: 2px;
+}
+
+.logo p {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    direction: rtl;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #222;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.navigation a:hover {
+    background: #eeeeee;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(
+        135deg,
+        #eef7ff,
+        #ffffff
+    );
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+
+/* ---------- Languages Section ---------- */
+
+.languages {
+    padding: 70px 6%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.languages h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.languages > p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* ---------- Language Cards ---------- */
+
+.language-cards {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.language-card {
+    text-decoration: none;
+    color: #222;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 35px 20px;
+    transition: 0.3s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.language-card span {
+    display: block;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.language-card h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.language-card p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* ---------- About Section ---------- */
+
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* =========================================
+   Mobile Responsive Design
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 470px;
+        padding: 55px 18px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero h3 {
+        font-size: 23px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .language-cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .languages h2 {
+        font-size: 28px;
+    }
+
+    .about h2 {
+        font-size: 27px;
+    }
+}
+
+
+/* ---------- Small Mobile Devices ---------- */
+
+@media (max-width: 420px) {
+
+    .navigation a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero h3 {
+        font-size: 21px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .language-card {
+        padding: 28px 15px;
+    }
+}
